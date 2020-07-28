@@ -1,6 +1,9 @@
-const proxy = require('http-proxy-middleware');
-module.exports = function(app) {
-    app.use(proxy('/user/**', 
-        { target: 'http://kaamayalb-670475734.ap-south-1.elb.amazonaws.com' }
-    ));
+const proxy = require("http-proxy-middleware");
+module.exports = function (app) {
+  app.use(
+    proxy("/user/**", {
+      target:
+        "http://kaamaayabeanstalk-env.eba-3rtpwci7.ap-south-1.elasticbeanstalk.com",
+    })
+  );
 };
